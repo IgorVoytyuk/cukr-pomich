@@ -16,6 +16,18 @@
 | [Типові помилки](https://cukr-pomich.pages.dev/pomylky-cukr) | Через що заяву повертають на braki formalne |
 | [Виїзд зі статусом UKR](https://cukr-pomich.pages.dev/vyizd-status-ukr) | Скільки днів можна бути за кордоном, щоб не втратити статус |
 
+## Куди платити — по містах
+
+Мито **340 zł** платиться **місту** (urząd miasta / gmina), а **100 zł** за виготовлення карти — **воєводському управлінню**. Це два різні рахунки, і рахунок мита свій у кожному місті. Реквізити зібрані з офіційних сторінок міст і управлінь, з посиланням на джерело на кожній сторінці.
+
+| Місто | Воєводство | Сторінка |
+|---|---|---|
+| Варшава | Mazowieckie | [cukr-warszawa](https://cukr-pomich.pages.dev/cukr-warszawa) |
+| Вроцлав | Dolnośląskie | [cukr-wroclaw](https://cukr-pomich.pages.dev/cukr-wroclaw) |
+| Краків | Małopolskie | [cukr-krakow](https://cukr-pomich.pages.dev/cukr-krakow) |
+| Познань | Wielkopolskie | [cukr-poznan](https://cukr-pomich.pages.dev/cukr-poznan) |
+| Ґданськ | Pomorskie | [cukr-gdansk](https://cukr-pomich.pages.dev/cukr-gdansk) |
+
 ## Технічно
 
 Статичний сайт без збірки й залежностей: чистий HTML + CSS + один `lang.js` для перемикання UA/RU. Хоститься на Cloudflare Pages.
@@ -26,6 +38,11 @@ foto-cukr.html        фото
 oplaty-cukr.html      оплати
 pomylky-cukr.html     помилки
 vyizd-status-ukr.html виїзд
+cukr-warszawa.html    Варшава: рахунки мита
+cukr-wroclaw.html     Вроцлав: рахунки мита
+cukr-krakow.html      Краків: рахунки мита
+cukr-poznan.html      Познань: рахунки мита
+cukr-gdansk.html      Ґданськ: рахунки мита
 lang.js               перемикач мови UA/RU
 style.css             стилі
 sitemap.xml           карта сайту
