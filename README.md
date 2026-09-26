@@ -27,6 +27,7 @@
 | Краків | Małopolskie | [cukr-krakow](https://cukr-pomich.pages.dev/cukr-krakow) |
 | Познань | Wielkopolskie | [cukr-poznan](https://cukr-pomich.pages.dev/cukr-poznan) |
 | Ґданськ | Pomorskie | [cukr-gdansk](https://cukr-pomich.pages.dev/cukr-gdansk) |
+| Лодзь | Łódzkie | [cukr-lodz](https://cukr-pomich.pages.dev/cukr-lodz) |
 
 ## Технічно
 
@@ -43,6 +44,7 @@ cukr-wroclaw.html     Вроцлав: рахунки мита
 cukr-krakow.html      Краків: рахунки мита
 cukr-poznan.html      Познань: рахунки мита
 cukr-gdansk.html      Ґданськ: рахунки мита
+cukr-lodz.html        Лодзь: обидва рахунки + каса
 lang.js               перемикач мови UA/RU
 style.css             стилі
 sitemap.xml           карта сайту
