@@ -25,7 +25,7 @@
 <tr><td>Рахунок</td><td><b>31 1240 1268 1111 0010 3877 3935</b></td></tr>
 <tr><td>Отримувач</td><td>Urząd Miejski w Gdańsku.</td></tr>
 </table>
-<p class="mut">Обидва рахунки опубліковані на одній офіційній сторінці воєводського управління — це єдине воєводство з нашого списку, де підтверджені <b>обидва</b>. Джерело: <a href="https://wsc.gdansk.uw.gov.pl/pl/wskazowki/oplaty" rel="noopener">wsc.gdansk.uw.gov.pl — opłaty (Pomorski UW)</a>. Реквізити змінюються — звірте на цій сторінці <b>у день оплати</b>.</p>
+<p class="mut">Обидва рахунки опубліковані на одній офіційній сторінці воєводського управління — тут, як і в <a href="/cukr-lodz">Лодзі</a>, підтверджені <b>обидва</b>. Джерело: <a href="https://wsc.gdansk.uw.gov.pl/pl/wskazowki/oplaty" rel="noopener">wsc.gdansk.uw.gov.pl — opłaty (Pomorski UW)</a>. Реквізити змінюються — звірте на цій сторінці <b>у день оплати</b>.</p>
 
 <h2>100 зл — за виготовлення карти</h2>
 <table>
@@ -90,7 +90,7 @@
 <tr><td>Счёт</td><td><b>31 1240 1268 1111 0010 3877 3935</b></td></tr>
 <tr><td>Получатель</td><td>Urząd Miejski w Gdańsku.</td></tr>
 </table>
-<p class="mut">Оба счёта опубликованы на одной официальной странице воеводского управления — это единственное воеводство из нашего списка, где подтверждены <b>оба</b>. Источник: <a href="https://wsc.gdansk.uw.gov.pl/pl/wskazowki/oplaty" rel="noopener">wsc.gdansk.uw.gov.pl — opłaty (Pomorski UW)</a>. Реквизиты меняются — сверьте на этой странице <b>в день оплаты</b>.</p>
+<p class="mut">Оба счёта опубликованы на одной официальной странице воеводского управления — здесь, как и в <a href="/cukr-lodz">Лодзи</a>, подтверждены <b>оба</b>. Источник: <a href="https://wsc.gdansk.uw.gov.pl/pl/wskazowki/oplaty" rel="noopener">wsc.gdansk.uw.gov.pl — opłaty (Pomorski UW)</a>. Реквизиты меняются — сверьте на этой странице <b>в день оплаты</b>.</p>
 
 <h2>100 зл — за изготовление карты</h2>
 <table>
@@ -143,5 +143,22 @@
 </main>
 </div>
 <script src="/lang.js"></script>
+<script>
+/* метка источника: ?from=<метка> в адресе страницы → ?start=<метка> в ссылке на бота.
+   Без метки ничего не меняется (обычный заход остаётся start=seo). */
+(function () {
+  var from = new URLSearchParams(location.search).get('from');
+  if (!from) return;
+  from = from.replace(/[^A-Za-z0-9_-]/g, '').slice(0, 32);   // Telegram start= принимает только это
+  if (!from) return;
+  var links = document.querySelectorAll('a[href*="t.me/cukr_pomich_bot"]');
+  for (var i = 0; i < links.length; i++) {
+    var h = links[i].getAttribute('href');
+    links[i].setAttribute('href', /[?&]start=/.test(h)
+      ? h.replace(/([?&]start=)[^&]*/, '$1' + from)
+      : h + (h.indexOf('?') === -1 ? '?' : '&') + 'start=' + from);
+  }
+})();
+</script>
 </body>
 </html>
