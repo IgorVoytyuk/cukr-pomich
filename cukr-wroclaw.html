@@ -137,5 +137,22 @@
 </main>
 </div>
 <script src="/lang.js"></script>
+<script>
+/* метка источника: ?from=<метка> в адресе страницы → ?start=<метка> в ссылке на бота.
+   Без метки ничего не меняется (обычный заход остаётся start=seo). */
+(function () {
+  var from = new URLSearchParams(location.search).get('from');
+  if (!from) return;
+  from = from.replace(/[^A-Za-z0-9_-]/g, '').slice(0, 32);   // Telegram start= принимает только это
+  if (!from) return;
+  var links = document.querySelectorAll('a[href*="t.me/cukr_pomich_bot"]');
+  for (var i = 0; i < links.length; i++) {
+    var h = links[i].getAttribute('href');
+    links[i].setAttribute('href', /[?&]start=/.test(h)
+      ? h.replace(/([?&]start=)[^&]*/, '$1' + from)
+      : h + (h.indexOf('?') === -1 ? '?' : '&') + 'start=' + from);
+  }
+})();
+</script>
 </body>
 </html>
