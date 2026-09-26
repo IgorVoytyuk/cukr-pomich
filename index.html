@@ -91,6 +91,7 @@ td:first-child{white-space:nowrap;font-weight:600;padding-right:14px}
 <li><a href="/cukr-krakow">Карта CUKR у Кракові</a> — рахунок UMK, оплата без комісії в PKO BP.</li>
 <li><a href="/cukr-poznan">Карта CUKR у Познані</a> — рахунок міста, адреса Wielkopolski UW.</li>
 <li><a href="/cukr-gdansk">Карта CUKR у Ґданську</a> — підтверджені <b>обидва</b> рахунки, 340 і 100 зл.</li>
+<li><a href="/cukr-lodz">Карта CUKR у Лодзі</a> — підтверджені <b>обидва</b> рахунки і каса управління.</li>
 </ul>
 
 <h2>Потрібна допомога?</h2>
@@ -164,6 +165,7 @@ td:first-child{white-space:nowrap;font-weight:600;padding-right:14px}
 <li><a href="/cukr-krakow">Карта CUKR в Кракове</a> — счёт UMK, оплата без комиссии в PKO BP.</li>
 <li><a href="/cukr-poznan">Карта CUKR в Познани</a> — счёт города, адрес Wielkopolski UW.</li>
 <li><a href="/cukr-gdansk">Карта CUKR в Гданьске</a> — подтверждены <b>оба</b> счёта, 340 и 100 зл.</li>
+<li><a href="/cukr-lodz">Карта CUKR в Лодзи</a> — подтверждены <b>оба</b> счёта и касса управления.</li>
 </ul>
 
 <h2>Нужна помощь?</h2>
@@ -195,6 +197,23 @@ td:first-child{white-space:nowrap;font-weight:600;padding-right:14px}
   var s=null;try{s=localStorage.getItem('lang')}catch(e){}
   if(!s&&/[?&]lang=ru/.test(location.search))s='ru';
   if(s)set(s);
+})();
+</script>
+<script>
+/* метка источника: ?from=<метка> в адресе страницы → ?start=<метка> в ссылке на бота.
+   Без метки ничего не меняется (обычный заход остаётся start=seo). */
+(function () {
+  var from = new URLSearchParams(location.search).get('from');
+  if (!from) return;
+  from = from.replace(/[^A-Za-z0-9_-]/g, '').slice(0, 32);   // Telegram start= принимает только это
+  if (!from) return;
+  var links = document.querySelectorAll('a[href*="t.me/cukr_pomich_bot"]');
+  for (var i = 0; i < links.length; i++) {
+    var h = links[i].getAttribute('href');
+    links[i].setAttribute('href', /[?&]start=/.test(h)
+      ? h.replace(/([?&]start=)[^&]*/, '$1' + from)
+      : h + (h.indexOf('?') === -1 ? '?' : '&') + 'start=' + from);
+  }
 })();
 </script>
 </body>
