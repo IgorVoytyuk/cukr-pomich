@@ -8,6 +8,7 @@
   }
   bs.forEach(function(b){b.onclick=function(){set(b.getAttribute('data-l'))}});
   var s=null;try{s=localStorage.getItem('lang')}catch(e){}
-  if(!s&&/[?&]lang=ru/.test(location.search))s='ru';
+  var q=location.search.match(/[?&]lang=(ru|pl)/);
+  if(!s&&q)s=q[1];
   if(s)set(s);
 })();
