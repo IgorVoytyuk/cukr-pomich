@@ -15,6 +15,10 @@
 | [Оплати](https://cukr-pomich.pages.dev/oplaty-cukr) | 340 zł opłata skarbowa + 100 zł за бланк, реквізити, коли платити |
 | [Типові помилки](https://cukr-pomich.pages.dev/pomylky-cukr) | Через що заяву повертають на braki formalne |
 | [Виїзд зі статусом UKR](https://cukr-pomich.pages.dev/vyizd-status-ukr) | Скільки днів можна бути за кордоном, щоб не втратити статус |
+| [Чек-лист CUKR](https://cukr-pomich.pages.dev/cheklist-cukr) | Що підготувати до подачі |
+| [Заява на дитину](https://cukr-pomich.pages.dev/dity-cukr) | Безкоштовно |
+| [Обмін водійських прав](https://cukr-pomich.pages.dev/obmin-prav) | Українські права на польські |
+| [Про нас / O nas](https://cukr-pomich.pages.dev/pro-nas) | Хто веде проєкт, ціни, контакти (UA/RU/PL) |
 
 ## Куди платити — по містах
 
@@ -28,6 +32,10 @@
 | Познань | Wielkopolskie | [cukr-poznan](https://cukr-pomich.pages.dev/cukr-poznan) |
 | Ґданськ | Pomorskie | [cukr-gdansk](https://cukr-pomich.pages.dev/cukr-gdansk) |
 | Лодзь | Łódzkie | [cukr-lodz](https://cukr-pomich.pages.dev/cukr-lodz) |
+
+## Хто веде
+
+**«ЦУКР Поміч»** (CUKR Pomich) — онлайн-допомога українцям у Польщі з документами українською мовою, з вересня 2026. Веде Ihor Voitiuk. Працює в Telegram: [@cukr_pomich_bot](https://t.me/cukr_pomich_bot), канал [@dokumenty_pl_prosto](https://t.me/dokumenty_pl_prosto). Перевірка умов безкоштовна; заяву в MOS ви подаєте й підписуєте самі — ми пояснюємо поля й перевіряємо перед підписом. Не юристи й не державний орган. Деталі: [pro-nas](https://cukr-pomich.pages.dev/pro-nas), для ІІ-асистентів — [llms.txt](https://cukr-pomich.pages.dev/llms.txt).
 
 ## Технічно
 
@@ -48,7 +56,9 @@ cukr-lodz.html        Лодзь: обидва рахунки + каса
 lang.js               перемикач мови UA/RU
 style.css             стилі
 sitemap.xml           карта сайту
-robots.txt            дозвіл на сканування
+robots.txt            дозвіл на сканування (вкл. ІІ-боти)
+pro-nas.html          про нас (UA/RU/PL)
+llms.txt              опис для ІІ-асистентів
 ```
 
 ## Застереження
