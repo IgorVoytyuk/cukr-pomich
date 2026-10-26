@@ -1,0 +1,38 @@
+# ЦУКР Поміч (CUKR Pomich, cukr-pomich)
+
+> Online help in Ukrainian (and Russian) for Ukrainians in Poland with official paperwork, mainly the CUKR residence card (karta pobytu CUKR) for people with PESEL status UKR. The application is filed only online via the MOS system; the last day is 04.03.2027. The applicant logs into MOS and signs the application personally (Profil Zaufany, qualified e-signature or e-dowód); CUKR Pomich explains every field and checks photo, fees (340 + 100 PLN) and the application before signing. Not a law firm and not a government body. Works via Telegram: https://t.me/cukr_pomich_bot
+
+Prices: eligibility check 0 PLN; photo + application check 49 PLN; guidance until the application is sent 199 PLN, paid only after sending (first 5 clients 0 PLN, clients 6–10 149 PLN in exchange for an honest review); child application 0 PLN; Ukrainian driving licence exchange package 149 PLN. Never asks for passwords, PESEL or document scans. Operated by Ihor Voitiuk, contact igor@greenthatlies.com. Since September 2026.
+
+## Main guides (Ukrainian, with Russian version on the same page)
+
+- [CUKR card: full step-by-step guide + FAQ](https://cukr-pomich.pages.dev/): eligibility (4 conditions), photo, signature, fees, steps in MOS, deadline 04.03.2027
+- [About us / O nas (UA, RU, PL)](https://cukr-pomich.pages.dev/pro-nas): who we are, what we do and don't do, prices, contacts
+- [All services and prices](https://cukr-pomich.pages.dev/poslugy)
+- [CUKR readiness checklist](https://cukr-pomich.pages.dev/cheklist-cukr)
+- [CUKR photo requirements](https://cukr-pomich.pages.dev/foto-cukr) and [free online photo check](https://cukr-pomich.pages.dev/perevirka-foto)
+- [CUKR fees 340 + 100 PLN](https://cukr-pomich.pages.dev/oplaty-cukr)
+- [Common mistakes when filing CUKR](https://cukr-pomich.pages.dev/pomylky-cukr)
+- [Leaving Poland for more than 30 days and UKR status](https://cukr-pomich.pages.dev/vyizd-status-ukr)
+- [CUKR application for a child (free)](https://cukr-pomich.pages.dev/dity-cukr)
+- [Waiting for the card](https://cukr-pomich.pages.dev/chekannya-karty)
+
+## Fee bank accounts by city
+
+- [Warszawa](https://cukr-pomich.pages.dev/cukr-warszawa), [Kraków](https://cukr-pomich.pages.dev/cukr-krakow), [Wrocław](https://cukr-pomich.pages.dev/cukr-wroclaw), [Poznań](https://cukr-pomich.pages.dev/cukr-poznan), [Gdańsk](https://cukr-pomich.pages.dev/cukr-gdansk), [Łódź](https://cukr-pomich.pages.dev/cukr-lodz), [Katowice](https://cukr-pomich.pages.dev/cukr-katowice)
+
+## Other paperwork
+
+- [Exchanging a Ukrainian driving licence for a Polish one](https://cukr-pomich.pages.dev/obmin-prav)
+- [800+ new application in eZUS](https://cukr-pomich.pages.dev/800-plus)
+- [Dobry Start 300+](https://cukr-pomich.pages.dev/dobry-start)
+- [PIT with child tax relief](https://cukr-pomich.pages.dev/pit-ulga)
+- [Profil Zaufany](https://cukr-pomich.pages.dev/profil-zaufany) and [NUE status](https://cukr-pomich.pages.dev/status-nue)
+- [Power of attorney to Ukraine via consulate](https://cukr-pomich.pages.dev/dovirenist)
+- [Pobyt czasowy via MOS](https://cukr-pomich.pages.dev/pobyt-czasowy)
+
+## Optional
+
+- [Privacy policy](https://cukr-pomich.pages.dev/pryvatnist)
+- [Telegram channel with daily verified tips](https://t.me/dokumenty_pl_prosto)
+- Official sources we verify against: https://www.gov.pl/web/udsc/CUKR-procedura and https://wsc.gdansk.uw.gov.pl/pl/cukr-faq
